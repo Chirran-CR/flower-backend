@@ -8,9 +8,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use(cors());
 
 mongoose.set("strictQuery", false);
-mongoose.connect("mongodb+srv://Chirran:1234@cluster0.tftujdn.mongodb.net/?retryWrites=true&w=majority",()=>{
-    console.log("connected to DB")
-})
+//mongoose connection
 
 const userSchema = new mongoose.Schema({
     name: String,
